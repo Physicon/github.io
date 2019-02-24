@@ -239,7 +239,14 @@ filterParam(this, 'grade');
 });
 $('#search-items').on('click', function(){
 searchItems();
-})
+});
+// click enter
+$(document).on('keypress',function(e) {
+    if(e.which == 13) {
+    	e.preventDefault();
+        searchItems();
+    }
+});
 
 		
 		},
