@@ -51,7 +51,7 @@ $.ajax({
 			$li.append('<div class="sci-figure"></div>');
 
 			// images in items, delete later
-			$li.children('.sci-figure').html('<img alt = "'+subject+'" src ="images/'+subject+'.jpeg">')
+			$li.children('.sci-figure').html('<img alt = "'+subject+'" src ="https://www.imumk.ru/svc/coursecover/'+courseId+'">')
 			// images in items, delete later
 
 
@@ -85,6 +85,9 @@ $.ajax({
 			addInputHidden('input-genre', genre);
 			addInputHidden('input-grade', grade);
 			addInputHidden('input-title', title);
+			addInputHidden('input-course-id', courseId);
+
+
 
 
 // default currency
